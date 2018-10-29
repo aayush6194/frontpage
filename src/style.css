@@ -1,0 +1,213 @@
+@import "https://use.fontawesome.com/releases/v5.4.2/css/all.css";
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: url("https://beta-static.photobucket.com/images/ag63/dragonslayer1275/0/a2e8081d-5079-419b-be8c-8a7a95208330-original.jpg");
+    background-size: cover;
+    background-position: 100% top;
+    background-attachment: fixed;
+  font: 15px arial;
+}
+.opacity{
+  background: white;
+  height:100%;
+  width: 100%;
+  opacity: 0.7;
+  margin-bottom: -3500px;
+  padding-bottom: 3500px;
+  overflow: hidden;
+}
+
+.container{
+ position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  align-items: start;
+   align-content: start;
+}
+
+.h-center {
+  display:table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.v-center {
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.center{
+  display: block;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+.bt {
+  border: 0px;
+  padding: 7px;
+}
+
+.bt-social {
+  display: block;
+  width: 250px;
+  height: 40px;
+  font-size: 1.2em;
+  margin:15px 0px;
+  color: white;
+}
+
+.bt:hover{
+  background: white;
+  color: black;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.header {
+  padding: 5px;
+  grid-column: 1/-1;
+}
+.footer {
+  padding: 5px;
+  grid-column: 1/-1;
+}
+
+.sign-up-container{
+  margin: 10px 10%;
+}
+
+.profile-pic {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+.sm {
+  height: 50px;
+  width: auto;
+}
+
+.md{
+  height: 100px;
+  width: 100px;
+}
+
+.invited-msg {
+  grid-column: 1/-1;
+  background: teal;
+  width: 100%;
+  font-size: 1.1em;
+}
+
+.entire-row {
+     grid-column: 1/-1;
+}
+
+.msg {
+    padding: 0px 20px;
+}
+
+.msg-container{
+ margin-left:10%;
+  margin-right:10%;
+}
+
+.form {
+  background: white;
+  border: 1px solid teal;
+  padding: 15px;
+  height: 300px;
+  min-width: 15%;
+  width: 280px;
+  border-radius: 5px;
+  opacity: 0.7;
+  font-size:  1.2em;
+}
+.form-element{
+  margin: 5px;
+}
+
+.or{
+  font-size: 2em;
+  font-weight: bold;
+}
+.content{
+  padding: 10px 20px;
+  text-align: center;
+}
+
+input{
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px;
+  margin-top: 6px;
+}
+
+label{
+ padding: 2px;
+}
+
+.bt-submit{
+  border-radius: 50px;
+  background: teal;
+  color: white;
+}
+
+.bt-blue{
+  background:  rgb(59, 89, 152);
+  color: white;
+}
+
+@media (max-width: 585px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .sign-up-container{
+    margin: 10px 5%;
+  }
+
+  .msg-container{
+      margin: 10px 5%;
+  }
+
+  .form{
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 1050px){
+
+  .form {
+    height: 370px;
+    width: 260px;
+  }
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bt-social{
+    width: 200px;
+    font-size: 1em;
+  }
+
+}
